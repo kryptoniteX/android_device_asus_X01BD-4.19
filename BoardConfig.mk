@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2020 The ArrowOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -21,8 +21,6 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
 TARGET_KERNEL_CONFIG := asus/X01BD_defconfig
-TARGET_KERNEL_CLANG_VERSION := atom
-TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-$(TARGET_KERNEL_CLANG_VERSION)
 
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/proc/tpd_gesture"
