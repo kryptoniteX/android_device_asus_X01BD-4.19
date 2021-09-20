@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2020 The ArrowOS Project
+# Copyright (C) 2021 The Hycon OS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_X01BD.mk
+    $(LOCAL_DIR)/aosp_X01BD.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_X01BD-eng \
-    arrow_X01BD-user \
-    arrow_X01BD-userdebug
+    aosp_X01BD-eng \
+    aosp_X01BD-user \
+    aosp_X01BD-userdebug
