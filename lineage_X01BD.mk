@@ -10,7 +10,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Inherit some common ArrowOS stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common.mk)
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -18,16 +18,11 @@ TARGET_BOOT_ANIMATION_RES := 1080
 # FaceUnlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
-# Maintainer
-#HYCON Flags
-HYCON_MAINTAINER := Puneet Gautam
-HYCON_BUILD_TYPE=OFFICIAL
-
 # Inherit from X01BD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_X01BD
+PRODUCT_NAME := lineage_X01BD
 PRODUCT_DEVICE := X01BD
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := ASUS_X01BDA
@@ -38,7 +33,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-asus
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=ASUS_X01BD_1 \
     PRODUCT_NAME=WW_X01BD \
-    PRIVATE_BUILD_DESC="redfin-user 11 RQ3A.210905.001 7511028 release-keys"
+    PRIVATE_BUILD_DESC="crosshatch-user 11 crosshatch:11/RQ3A.210805.001 7474174 release-keys"
 
 # Build fingerprint
-BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ3A.210905.001/7511028:user/release-keys"
+BUILD_FINGERPRINT := "google/crosshatch/crosshatch:11/RQ3A.210805.001.A1/7474174:user/release-keys"
